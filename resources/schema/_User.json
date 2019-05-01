@@ -1,0 +1,94 @@
+{
+  "schema": {
+    "objectId": {
+      "type": "String"
+    },
+    "username": {
+      "type": "String"
+    },
+    "name": {
+      "type": "String"
+    },
+    "email": {
+      "type": "String"
+    },
+    "emailVerified": {
+      "type": "Boolean"
+    },
+    "categories": {
+      "v": 2,
+      "type": "Array"
+    },
+    "weixinHookUrl": {
+      "type": "String"
+    },
+    "mobilePhoneNumber": {
+      "type": "String"
+    },
+    "wechatEnterpriseUserId": {
+      "type": "String"
+    },
+    "authData": {
+      "hidden": true,
+      "type": "Object"
+    },
+    "bearychatUrl": {
+      "type": "String"
+    },
+    "mobilePhoneVerified": {
+      "type": "Boolean"
+    },
+    "gravatarHash": {
+      "type": "String"
+    },
+    "ACL": {
+      "type": "ACL"
+    },
+    "createdAt": {
+      "type": "Date"
+    },
+    "updatedAt": {
+      "type": "Date"
+    },
+    "password": {
+      "type": "String"
+    },
+    "sessionToken": {
+      "type": "String"
+    },
+    "salt": {
+      "type": "String"
+    }
+  },
+  "permissions": {
+    "add_fields": {
+      "roles": [],
+      "users": [],
+      "*": true
+    },
+    "delete": {
+      "roles": "",
+      "users": ""
+    },
+    "update": {
+      "*": true,
+      "users": [],
+      "roles": []
+    },
+    "get": {
+      "roles": [],
+      "users": [],
+      "*": true
+    },
+    "find": {
+      "roles": "customerService",
+      "users": ""
+    },
+    "create": {
+      "roles": [],
+      "users": [],
+      "*": true
+    }
+  },
+  "indexes": []
+}
