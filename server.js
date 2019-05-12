@@ -5,11 +5,6 @@ const bodyParser = require('body-parser')
 const compression = require('compression')
 const Raven = require('raven')
 const AV = require('leanengine')
-AV.init({
-  appId: process.env.LEANCLOUD_APP_ID || 'kcox9er8C9AhSnK3tHxY5LsF-gzGzoHsz',
-  appKey: process.env.LEANCLOUD_APP_KEY || 'UGMUtIpDyD47oKoUVhzS8CUl',
-  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY || 'QotmvrjR5gWNAMVnu8hxI3ul'
-});
 
 const config = require('./config')
 
