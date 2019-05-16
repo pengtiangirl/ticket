@@ -441,7 +441,7 @@ AV.Cloud.define('statsDailyRange', (req, res) => {
     })
     .catch(console.error)
   }
-  fn(moment('2019-05-15'))
+  fn(moment())
 })
 
 AV.Cloud.define('statsDaily', (req, res) => {
