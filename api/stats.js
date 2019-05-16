@@ -436,8 +436,8 @@ AV.Cloud.define('statsDailyRange', (req, res) => {
   const fn = (date) => {
     return AV.Cloud.run('statsDaily', {date: date.format('YYYY-MM-DD')})
     .then(() => {
-      if(date.isAfter('2019-05-01'))
-      return fn(date.subtract(1, 'days'))
+      if (date.isAfter('2019-05-01'))
+       return fn(date.substract(1, 'days'));
     })
     .catch(console.error)
   }
