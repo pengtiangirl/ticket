@@ -436,11 +436,12 @@ AV.Cloud.define('statsDailyRange', (req, res) => {
   const fn = (date) => {
     return AV.Cloud.run('statsDaily', {date: date.format('YYYY-MM-DD')})
     .then(() => {
+      if(date.isAfter('2019-05-01'))
       return fn(date.subtract(1, 'days'))
     })
     .catch(console.error)
   }
-  fn(moment('2017-07-14'))
+  fn(moment())
 })
 
 AV.Cloud.define('statsDaily', (req, res) => {
